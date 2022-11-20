@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> my game </title>
+    <link rel="shortcut icon" href="./images/action.png">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/html5shiv.min.js"></script>
+    <script src="./js/respond.min.js"></script>
+    <script src="./js/all.min.js"></script>
+
+</head>
+<body>
+
+ <section class="first text-center" >
+    <div class="container">
+        <div class="row row1">
+            <div class="col-lg-12">
+                <div class="div1">
+                    <h1>Movies Game With Pictures </h1>
+
+                </div>
+            </div>
+        
+        </div>
+         <div class="row row2" style="display: none;">
+            <div class="col-lg-12">
+                <div class="de1">
+                    <h1> معلومات عن اللعبة قبل البدء </h1>
+                    <button id="btn_row2" class="btn btn-primary">
+                        اضغط 
+                    </button>
+                </div>
+            </div>
+           
+        </div>
+
+<!-- 
+       <div class="row row5 " style="display: none;">
+            <div class="col-lg-12">
+                <div class="de16">
+                <h5>    </h5>
+                    
+                <input id="write_your_name" type="text" class="form-control" placeholder="اكتب اسمك">
+                    <div class="khon"> <bdi> ! </bdi>  اكتب اسمك   </div>
+                <button id="btn_row5" class="btn btn-primary">
+                        موافق  
+                    </button>
+                </div>
+            </div>
+           
+        </div> --> 
+
+        <div class="row row3 " style="display: none;">
+            <div class="col-lg-12">
+                <div class="de12">
+            <h5> <span style="background-color: rgb(63, 32, 32); color:white;"> <i class="fa-regular fa-face-smile"></i></span>  اهلا بكم فى لعبة افلام بواسطة  الصور    </h5>
+                    <p class="bn">
+                         سوف اشرح بعض المعلومات حول اللعبة وهى كالاتى
+                         
+                    </p>
+              
+                    <p>
+                        سوف يظهر لك صور لتحدد بها نوع الفيلم ويوجد اربع اختيارات 
+                    </p>
+
+                    <P>
+                         ملحوظة عدد الاسئلة 30 سؤال      
+                    </P>
+
+                    <p>
+                        علشان تنجح فى اختبار اللعبة لابد ان تحصل على 15 نقطة  او اكثر اما اذا حصلت على اقل من 15 نقطة فسوف تخسر
+                    </p>
+                    <button id="btn_row3" class="btn btn-primary">
+                        هيا بنا نبدا  
+                    </button>
+                </div>
+            </div>
+           
+        </div>
+
+
+        <div class="row row4" style="display: none;">
+            <div class="col-lg-12">
+                <div class="de13">
+                    <h5 id="q3"> 3  </h5>
+                    <h5 id="q2"> 2  </h5>
+                    <h5 id="q1"> 1  </h5>
+                   
+                   
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+</section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="sec1  text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-4" >
+                        <div id="d_tru" class="div1" style="display:inlin-block ;">
+                          <span class="glyphicon glyphicon-ok
+                          correct"></span>
+                        </div>
+                        <h1 id="tr" class="true"> 0 </h1>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-4"style="text-align: center;">
+                        <div class="div2">
+                            
+             <h1 id="me" class="me"> 
+                
+                    
+              </h1>
+              <p id="ag1" class="agaba1">  الاجابة الصحيحة : اضحك الصورة تطلع حلوة </p>
+              <p id="ag2" class="agaba2">  الاجابة الصحيحة : ملاكى اسكندرية </p>
+              <p id="ag3" class="agaba3">  الاجابة الصحيحة : على باب الوزير  </p>
+              <p id="ag4" class="agaba4">  الاجابة الصحيحة : محامى خلع  </p>
+              <p id="ag5" class="agaba5">  الاجابة الصحيحة : الجريمة الضاحكة   </p>
+              <p id="ag6" class="agaba6">  الاجابة الصحيحة : بلد البنات  </p>
+              <p id="ag7" class="agaba7">  الاجابة الصحيحة : حب فى الزنزانة  </p>
+              <p id="ag8" class="agaba8">  الاجابة الصحيحة : البية البواب  </p>
+              <p id="ag9" class="agaba9">  الاجابة الصحيحة : اللص والكلاب  </p>
+              <p id="ag10" class="agaba10">  الاجابة الصحيحة : الانس والجن  </p>
+              <p id="ag11" class="agaba11">  الاجابة الصحيحة : الثلاثة يشتغلونها </p>
+              <p id="ag12" class="agaba12">  الاجابة الصحيحة : اللمبى 8 جيجا  </p>
+              <p id="ag13" class="agaba13">  الاجابة الصحيحة : عسل اسود  </p>
+              <p id="ag14" class="agaba14">  الاجابة الصحيحة : عصافير النيل  </p>
+              <p id="ag15" class="agaba15">  الاجابة الصحيحة : عصابة حمادة وتوتو  </p>
+              <p id="ag16" class="agaba16">  الاجابة الصحيحة : فتح عينيك  </p>
+              <p id="ag17" class="agaba17">  الاجابة الصحيحة : الاسطى المدير  </p>
+              <p id="ag18" class="agaba18">  الاجابة الصحيحة : بلية ودماغة العالية  </p>
+              <p id="ag19" class="agaba19">  الاجابة الصحيحة : الحرامى والعبيط  </p>
+              <p id="ag20" class="agaba20">  الاجابة الصحيحة : قلب امة  </p>
+              <p id="ag21" class="agaba21">  الاجابة الصحيحة : وقفة رجالة  </p>
+              <p id="ag22" class="agaba22">  الاجابة الصحيحة : ساعة رضا  </p>
+              <p id="ag23" class="agaba23">  الاجابة الصحيحة : حامل اللقب  </p>
+              <p id="ag24" class="agaba24">  الاجابة الصحيحة : ساعة ونصف  </p>
+              <p id="ag25" class="agaba25">  الاجابة الصحيحة : الهرم الرابع  </p>
+              <p id="ag26" class="agaba26">  الاجابة الصحيحة : البدلة  </p>
+              <p id="ag27" class="agaba27">  الاجابة الصحيحة : غرام الافاعى  </p>
+              <p id="ag28" class="agaba28">  الاجابة الصحيحة : الفيل الازرق  </p>
+              <p id="ag29" class="agaba29">  الاجابة الصحيحة : رصيف نمرة خمسة  </p>
+              <p id="ag30" class="agaba30">  الاجابة الصحيحة : ابناء وقتلة  </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-4" >
+                      
+                        <div id="d_false" class="div3">
+                            <span class="glyphicon glyphicon-remove
+                            wrong"></span>
+                        </div>
+                        <h1 id="fa" class="false"> 0 </h1>
+                        
+                    </div>
+                </div>    
+            </div>
+    </section>
+
+
+
+
+<section class="sec2 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="div1">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 1 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a1.png" alt="">
+
+                            </li>
+                            <li>  
+                                <img src="./images/a2.png" alt="">
+
+                        </li>
+
+                     
+
+                        <li>  
+                            <img src="./images/a3.png" alt="">
+
+                       </li>
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul1">
+                            <ul class="list-unstyled">
+                                <li id="ul1f" onclick="clickb1();">  صايع بحر   </li>
+                                <li id="ul1f" onclick="clickb1();">  حبيبي دائما </a> </li>
+                                <li id="ul1t" onclick="clicka1();"> اضحك الصورة تطلع حلوة  </li>
+                                <li id="ul1f" onclick="clickb1();">  الهلفوت  </li>
+                            </ul>
+
+                           
+                        </div>
+                        
+                       
+                    </div>
+
+                   
+                </div>
+
+            
+                <div class="div2">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 2 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a8.png" alt="">
+
+                            </li>
+                       
+
+                            <li>  
+                                <img src="./images/a9.jpg" alt="">
+
+                        </li>
+                   
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul2">
+                            <ul class="list-unstyled">
+                                <li id="ul2t" onclick="clicka2();">  ملاكي اسكندرية  </li>
+                                <li id="ul2f" onclick="clickb2();">  صايع بحر   </li>
+                                <li id="ul2f" onclick="clickb2();">  الشيطان يعظ   </li>
+                                <li id="ul2f" onclick="clickb2();">  الهلفوت  </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                 
+                </div>
+
+
+                <div class="div3">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 3 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a7.png" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a5.png" alt="">
+
+                        </li>
+                   
+                        <li>  
+                            <img src="./images/a6.png" alt="">
+
+                    </li>
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul3">
+                            <ul class="list-unstyled">
+                                <li id="ul3f" onclick="clickb3();">  كلم ماما  </li>
+                                <li id="ul3f" onclick="clickb3();">  الشيطان يعظ   </li>
+                                <li id="ul3f" onclick="clickb3();">  صايع بحر   </li>
+                                <li id="ul3t" onclick="clicka3();">  على باب الوزير  </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+                
+                
+                <div class="div4">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 4 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a10.png" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a12.jpg" alt="">
+
+                        </li>
+                   
+           
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul4">
+                            <ul class="list-unstyled">
+                                <li id="ul4f" onclick="clickb4();">  سوق السلاح </li>
+                                <li id="ul4t" onclick="clicka4();">  محامى خلع  </li>
+                                <li id="ul4f" onclick="clickb4();">  ملاك وشيطان </li>
+                                <li id="ul4f" onclick="clickb4();">  على باب الوزير </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                  
+                </div>
+           
+                <div class="div5">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 5 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a13.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a14.jpg" alt="">
+
+                        </li>
+                   
+           
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul5">
+                            <ul class="list-unstyled">
+                                <li id="ul5f" onclick="clickb5();">  سوق السلاح   </li>
+                                <li id="ul5f" onclick="clickb5();">  كلام على الهواء    </li>
+                                <li id="ul5t" onclick="clicka5();">  الجريمة الضاحكة    </li>
+                                <li id="ul5f" onclick="clickb5();">  على باب الوزير </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+                <div class="div6">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 6 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a15.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a16.png" alt="">
+
+                        </li>
+                   
+           
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul6">
+                            <ul class="list-unstyled">
+                                <li id="ul6t" onclick="clicka6();">  بلد البنات  </li>
+                                <li id="ul6f" onclick="clickb6();">  كلب بلدى   </li>
+                                <li id="ul6f" onclick="clickb6();">  على باب الوزير   </li>
+                                <li id="ul6f" onclick="clickb6();"> جمهورية امبابة  </li>
+                                
+                                </ul>
+                     
+
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="div7">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 7 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a17.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a18.png" alt="">
+
+                        </li>
+                   
+                        <li>  
+                            <img src="./images/a19.jpg" alt="">
+
+                    </li>
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul7">
+                            <ul class="list-unstyled">
+                                <li id="ul7f" onclick="clickb7();">  سوق السلاح  </li>
+                                <li id="ul7f" onclick="clickb7();">  وداع يا ماضى   </li>
+                                <li id="ul7t" onclick="clicka7();">  الحب فى الزنزانة   </li>
+                                <li id="ul7f" onclick="clickb7();">  الف مبروك  </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                  
+                </div>
+
+
+                <div class="div8">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 8 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a20.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a21.jpg" alt="">
+
+                        </li>
+                   
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul8">
+                            <ul class="list-unstyled">
+                                <li id="ul8f" onclick="clickb8();">  سلام ياصاحبى   </li>
+                                <li id="ul8t" onclick="clicka8();">   البية البواب   </li>
+                                <li id="ul8f" onclick="clickb8();">  ملاك وشيطان  </li>
+                                <li id="ul8f" onclick="clickb8();">  سمير وشهير وبهير  </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                  
+                </div>
+
+
+                <div class="div9">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 9 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a22.png" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a23.jpg" alt="">
+
+                        </li>
+                   
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul9">
+                            <ul class="list-unstyled">
+                                <li id="ul9f" onclick="clickb9();">  وش سجون   </li>
+                                <li id="ul9f" onclick="clickb9();">  محامى خلع   </li>
+                                <li id="ul9t" onclick="clicka9();">  اللص والكلاب    </li>
+                                <li id="ul9f" onclick="clickb9();">  خيانة مشروعة    </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="div10">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 10 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a24.png" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a25.png" alt="">
+
+                        </li>
+                   
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul10">
+                            <ul class="list-unstyled">
+                                <li id="ul10f" onclick="clickb10();">  محامى خلع   </li>
+                                <li id="ul10f" onclick="clickb10();">  سوق السلاح   </li>
+                                <li id="ul10t" onclick="clicka10();">  الانس والجن    </li>
+                                <li id="ul10f" onclick="clickb10();">  خارج عن القانون  </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+
+                <div class="div11">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 11 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a26.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a27.jpg" alt="">
+
+                        </li>
+                   
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul11">
+                            <ul class="list-unstyled">
+                                <li id="ul11t" onclick="clicka11();">  الثلاثة يشتغلونها  </li>
+                                <li id="ul11f" onclick="clickb11();">  محامى خلع  </li>
+                                <li id="ul11f" onclick="clickb11();">  ملاك الطيبة   </li>
+                                <li id="ul11f" onclick="clickb11();">  بلد البنات   </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+                <div class="div12">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 12 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a28.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/29.jpg" alt="">
+
+                        </li>
+                   
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul12">
+                            <ul class="list-unstyled">
+                                <li id="ul12t" onclick="clicka12();">  اللمبى 8 جيجا    </li>
+                                <li id="ul12f" onclick="clickb12();">  ملاك وشيطان   </li>
+                                <li id="ul12f" onclick="clickb12();">  على باب الوزير  </li>
+                                <li id="ul12f" onclick="clickb12();">  محامى خلع   </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="div13">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 13 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a30.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a31.jpg" alt="">
+
+                        </li>
+                   
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul13">
+                            <ul class="list-unstyled">
+                                <li id="ul13t" onclick="clicka13();">  عسل اسود   </li>
+                                <li id="ul13f" onclick="clickb13();">   عسل ابيض   </li>
+                                <li id="ul13f" onclick="clickb13();">  شهر العسل   </li>
+                                <li id="ul13f" onclick="clickb13();">  النوم فى العسل </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+                <div class="div14">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 14 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a32.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a33.jpg" alt="">
+
+                        </li>
+                   
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul14">
+                            <ul class="list-unstyled">
+                                <li id="ul14f" onclick="clickb14();">  عصافير الجنة   </li>
+                                <li id="ul14f"  onclick="clickb14();">  العصفور فى الماء   </li>
+                                <li id="ul14t" onclick="clicka14();">  عصافير النيل   </li>
+                                <li id="ul14f" onclick="clickb14();">  بين السماء والارض   </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+                <div class="div15">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 15 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                            <li>  
+                                    <img src="./images/a34.jpg" alt="">
+
+                            </li>
+                       
+                            <li>  
+                                <img src="./images/a35.jpg" alt="">
+
+                        </li>
+                   
+                        <li>  
+                            <img src="./images/a36.jpg" alt="">
+
+                    </li>
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul5">
+                            <ul class="list-unstyled">
+                                <li id="ul15f" onclick="clickb15();">  لصوص لكن زرفاء    </li>
+                                <li id="ul15f" onclick="clickb15();">  حرامية فى تايلاند    </li>
+                                <li id="ul15t" onclick="clicka15();">  عصابة حمادة وتوتو   </li>
+                                <li id="ul15f" onclick="clickb15();">  مراتى وزوجتى      </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+                    
+                <div class="div16">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 16 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                       
+                            <li>  
+                                <img src="./images/a37.jpg" alt="">
+
+                        </li>
+                   
+                        <li>  
+                            <img src="./images/a38.jpg" alt="">
+
+                    </li>
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul16">
+                            <ul class="list-unstyled">
+                                <li id="ul16f" onclick="clickb16();">  دكتور عيون   </li>
+                                <li id="ul16f" onclick="clickb16();">  عيون الصقر   </li>
+                                <li id="ul16t" onclick="clicka16();">  فتح عينيك    </li>
+                                <li id="ul16f" onclick="clickb16();">  عيون القلب    </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+                <div class="div17">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 17 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                       
+                            <li>  
+                                <img src="./images/a39.jpg" alt="">
+
+                        </li>
+                   
+                        <li>  
+                            <img src="./images/a40.jpg" alt="">
+
+                    </li>
+                
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul17">
+                            <ul class="list-unstyled">
+                                <li id="ul17f" onclick="clickb17();">  سواق الهانم    </li>
+                                <li id="ul17t" onclick="clicka17();">  الاسطى المدير    </li>
+                                <li id="ul17f" onclick="clickb17();">  الصنايعى والسباك    </li>
+                                <li id="ul17f" onclick="clickb17();">   حبيبى دائما    </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+              
+                </div>
+
+
+
+                <div class="div18">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 18 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                       
+                            <li>  
+                                <img src="./images/a41.jpg" alt="">
+
+                        </li>
+                   
+                        <li>  
+                            <img src="./images/a42.jpg" alt="">
+
+                    </li>
+                
+
+                    <li>  
+                        <img src="./images/a43.jpg" alt="">
+
+                </li>
+               
+
+                     
+
+                   
+
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul18">
+                            <ul class="list-unstyled">
+                                <li id="ul18f" onclick="clickb18();">  السد العالى   </li>
+                                <li id="ul18f" onclick="clickb18();">  زوجة رجل مهم   </li>
+                                <li id="ul18f" onclick="clickb18();">  بلطية العايمة   </li>
+                                <li id="ul18t" onclick="clicka18();">  بلية ودماغة العالية   </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+                <div class="div19">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 19 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                                    <li>  
+                                        <img src="./images/a45.jpg" alt="">
+            
+                                </li>
+                       
+                            <li>  
+                                <img src="./images/a44.png" alt="">
+
+                           </li>
+                    
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul19">
+                            <ul class="list-unstyled">
+                                <li id="ul19f" onclick="clickb19();">  تجار الموت   </li>
+                                <li id="ul19t" onclick="clicka19();">  الحرامى والعبيط   </li>
+                                <li id="ul19f" onclick="clickb19();">  تجار السموم    </li>
+                                <li id="ul19f" onclick="clickb19();">  الرجل الابيض المتوسط </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+         
+                </div>
+
+                <div class="div20">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 20 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                                    <li>  
+                                        <img src="./images/a46.png" alt="">
+            
+                                </li>
+                       
+                            <li>  
+                                <img src="./images/a47.png" alt="">
+
+                           </li>
+                    
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul20">
+                            <ul class="list-unstyled">
+                                <li id="ul20f" onclick="clickb20();">  القلب لة احكام   </li>
+                                <li id="ul20f" onclick="clickb20();">  بحبك وانا كمان  </li>
+                                <li id="ul20t" onclick="clicka20();">  قلب امة   </li>
+                                <li id="ul20f" onclick="clickb20();">  حب البنات  </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="div21">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 21 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                                    <li>  
+                                        <img src="./images/a48.png" alt="">
+            
+                                </li>
+                       
+                            <li>  
+                                <img src="./images/a49.jpg" alt="">
+
+                           </li>
+                    
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul21">
+                            <ul class="list-unstyled">
+                                <li id="ul21f" onclick="clickb21();">  اصحاب الحتة   </li>
+                                <li id="ul21f" onclick="clickb21();">  هاتولى راجل   </li>
+                                <li id="ul21f" onclick="clickb21();">  اصحاب ولا اعز   </li>
+                                <li id="ul21t" onclick="clicka21();">  وقفة رجالة   </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+                <div class="div22">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 22 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                   
+                                  <li>  
+                                        <img src="./images/a51.jpg" alt="">
+        
+                                   </li>
+
+                                    <li>  
+                                        <img src="./images/a50.jpg" alt="">
+            
+                                </li>
+                       
+                   
+                    
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul22">
+                            <ul class="list-unstyled">
+                                <li id="ul22t" onclick="clicka22();">  ساعة رضا   </li>
+                                <li id="ul22f" onclick="clickb22();">  الكلاب تعوى   </li>
+                                <li id="ul22f" onclick="clickb22();">  كدا رضا   </li>
+                                <li id="ul22f" onclick="clickb22();">  الغسالة   </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+                <div class="div23">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 23 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                                    <li>  
+                                        <img src="./images/a52.jpg" alt="">
+            
+                                </li>
+                       
+                            <li>  
+                                <img src="./images/a53.jpg" alt="">
+
+                           </li>
+                    
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul23">
+                            <ul class="list-unstyled">
+                                <li id="ul23f" onclick="clickb23();">  شحاتة ابو كف   </li>
+                                <li id="ul23t" onclick="clicka23();">  حامل اللقب     </li>
+                                <li id="ul23f" onclick="clickb23();">  مشجعى الكورة     </li>
+                                <li id="ul23f" onclick="clickb23();">  خلصانة بشياكة     </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="div24">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 24 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                                    <li>  
+                                        <img src="./images/a54.png" alt="">
+            
+                                </li>
+                       
+                            <li>  
+                                <img src="./images/a55.jpg" alt="">
+
+                           </li>
+                    
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul24">
+                            <ul class="list-unstyled">
+                                <li id="ul24f" onclick="clickb24();">  ساعتين الا رع    </li>
+                                <li id="ul24f" onclick="clickb24();">  ساعة وتلت    </li>
+                                <li id="ul24t" onclick="clicka24();">  ساعة ونص    </li>
+                                <li id="ul24f" onclick="clickb24();">  ساعة رضا    </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="div25">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 25 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                                    <li>  
+                                        <img src="./images/a56.jpg" alt="">
+            
+                                </li>
+                       
+                            <li>  
+                                <img src="./images/a57.jpg" alt="">
+
+                           </li>
+                    
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul25">
+                            <ul class="list-unstyled">
+                                <li id="ul25f" onclick="clickb25();">  شارع الهرم     </li>
+                                <li id="ul25f" onclick="clickb25();">  الحاسة السابعة     </li>
+                                <li id="ul25t" onclick="clicka25();">  الهرم الرابع    </li>
+                                <li id="ul25f" onclick="clickb25();">  جمهورية امبابة    </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="div26">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 26 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                           
+                                    <li>  
+                                        <img src="./images/a58.jpg" alt="">
+            
+                                </li>
+                       
+                           
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul26">
+                            <ul class="list-unstyled">
+                                <li id="ul26t" onclick="clicka26();">  البدلة    </li>
+                                <li id="ul26f" onclick="clickb26();">  البس عشان خارجين   </li>
+                                <li id="ul26f" onclick="clickb26();">  البعض لا يذهب للممأذون مرتين </li>
+                                <li id="ul26f" onclick="clickb26();">  يوم ملوش لازمة     </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                 
+                </div>
+
+
+                <div class="div27">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 27 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                                    <li>  
+                                        <img src="./images/a60.png" alt="">
+            
+                                </li>
+                           
+                                    <li>  
+                                        <img src="./images/a59.jpg" alt="">
+            
+                                </li>
+                       
+                       
+                   
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul27">
+                            <ul class="list-unstyled">
+                                <li id="ul27f" onclick="clickb27();">  غرام وانتقام     </li>
+                                <li id="ul27f" onclick="clickb27();">  غاوى حب     </li>
+                                <li id="ul27t" onclick="clicka27();">  غرام الافاعى    </li>
+                                <li id="ul27f" onclick="clickb27();">  القاضى والجلاد    </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                 
+                </div>
+
+                <div class="div28">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 28 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                                    <li>  
+                                        <img src="./images/a61.png" alt="">
+            
+                                </li>
+                           
+                                    <li>  
+                                        <img src="./images/a62.png" alt="">
+            
+                                </li>
+                       
+                       
+                   
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul28">
+                            <ul class="list-unstyled">
+                                <li id="ul28f" onclick="clickb28();">  كلب بلدى   </li>
+                                <li id="ul28f" onclick="clickb28();">  افريكانو    </li>
+                                <li id="ul28t" onclick="clicka28();">  الفيل الازرق    </li>
+                                <li id="ul28f" onclick="clickb28();">  كونغر حبنا    </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                  
+                </div>
+
+
+                <div class="div29">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 29 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                                    <li>  
+                                        <img src="./images/a63.jpg" alt="">
+            
+                                </li>
+                           
+                                    <li>  
+                                        <img src="./images/a64.jpg" alt="">
+            
+                                </li>
+
+                                <li>  
+                                    <img src="./images/a65.png" alt="">
+        
+                            </li>
+                       
+                       
+                   
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul29">
+                            <ul class="list-unstyled">
+                                <li id="ul29f" onclick="clickb29();">  567     </li>
+                                <li id="ul29f" onclick="clickb29();">  خمسة جنية      </li>
+                                <li id="ul29f" onclick="clickb29();">  ملائكة الشوارع    </li>
+                                <li id="ul29t" onclick="clicka29();">  رصيف نمرة خمسة    </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="div30">
+                    <div class="image_f">
+                        <img src="./images/think.gif" alt="">
+                    </div>
+                    <h1> 30 </h1>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="div__quse">
+                                <ul class="list-unstyled">
+                        
+                                    <li>  
+                                        <img src="./images/a66.jpg" alt="">
+            
+                                </li>
+                           
+                                    <li>  
+                                        <img src="./images/a67.jpg" alt="">
+            
+                                </li>
+
+                        
+                       
+                   
+                
+   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="ul30">
+                            <ul class="list-unstyled">
+                                <li id="ul30f" onclick="clickb30();">  اباء وابناء  </li>
+                                <li id="ul30f" onclick="clickb30();">  لا تدمرنى معك   </li>
+                                <li id="ul30t" onclick="clicka30();">  ابناء وقتلة   </li>
+                                <li id="ul30f" onclick="clickb30();">  ابناء ولكن   </li>
+                            </ul>
+
+                           
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+
+                <div class="div33">
+                    
+                   
+                 <div class="row">
+                        <div class="col-lg-12">
+                            <div class="resu____ltfalse">
+                                <h1> خطأ </h1>
+                            </div>
+
+                            <div class="resu____lttrue">
+                                <h1> صح </h1>
+                            </div>
+                            
+                        </div>
+                    </div>
+               </div>
+
+
+                <div class="result">
+                    <div class="row">
+                        <h1 id="win" class="Winner"> Winner </h1>
+                        <h1 id="los" class="Loser"> Loser </h1>
+                        <div class="col-lg-6">
+                            <h1> <span id="true_span" class="glyphicon glyphicon-ok
+                                "></span></h1>
+                            <div class="div1_tru">
+                                <p> Points</p>
+                                <h1 id="point_tr">
+                                0
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h1> <span id="false_span" class="glyphicon glyphicon-remove
+                                "></span></h1>
+                            <div class="div1_fal">
+                                <p> Points</p>
+                                <h1 id="point_fal">
+                                    0
+
+                                </h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                <a href="index.html"> اعادة اللعبة  </a>
+                        </div>
+                    </div>
+
+                   
+
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="blon" class="blon"></div>
+    
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
